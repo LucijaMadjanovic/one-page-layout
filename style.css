@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+
+/* reset                                   */
+
+*, ::before, ::after {box-sizing: border-box;
+}
+
+body {margin: 48px;
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+color: #FAFAFF;
+line-height: 26px;
+background-color: #242424;
+}
+
+h1, h2, h3, h4, h5, h6, p {margin: 0px;
+}
+
+a {text-decoration: none;
+color: #FAFAFF;
+}
+
+img {max-width: 100%;
+height: auto;
+}
+
+ul {margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+
+/* navigacija                                */
+
+.nav{height: 48px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{width: 200px;
+}
+
+
+/* bar gumb, hambuerger    */
+.show{right: 0;
+}
+
+.active{color: var(--first-color);
+}
+
+
+/* layout                                  */
+
+.bd-grid{max-width: 1024px;
+display: grid;
+grid-template-columns: 100%;
+grid-column-gap: 32px;
+width: calc(100% - 48px);
+margin-left: 24px;
+margin-right: 24px;
+}
+
+.header{width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background: #242424;
+height: 48px;
+}
+
+
+/* home                                   */
+
+.home{background-color: #242424;
+}
+
+.home__data{padding-top: 96px;
+}
+
+
+/* klase                                  */
+
+.section {padding: 48px 0px;
+}
+
+.section-title {font-size: 20px;
+color: #FAFAFF;
+margin: 32px 0px 8px;
+text-align: center;
+}
+
+.section-all{display: block;
+font-size: 12px;
+font-weight: 500;
+color: #FAFAFF;
+text-align: center;
+margin-bottom: 16px;
+}
+
+/* fotogalerija slideshow */
+
+.slideshow-container {max-width: 100%;
+position: relative;
+margin: auto;
+}
+
+.mySlides {display: none;
+}
+
+.prev, .next {cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+.next {right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* odbrojavanje            */
+
+.timer__bg{background: url('../img/imageprimjer.jpg') no-repeat center/cover;
+text-align: center;
+}
+
+.timer__data{padding: 56px 4px;
+background: #0000007F;
+color: #FAFAFF;
+}
+
+.timer__title{font-size: 20px;
+letter-spacing: 4px;
+text-transform: uppercase;
+font-weight: 500;
+}
+
+.timer_odbrojavanje{font-size: 24px;
+margin-bottom: 16px;
+letter-spacing: 4px;
+}
+
+
+/* prijavnica                                      */
+
+form {max-width:420px;
+margin:50px auto;
+}
+
+.info-input {color: #FAFAFF;
+font-family: 'Poppins', sans-serif;
+font-weight:300;
+font-size: 18px;
+line-height: 22px;
+background-color: transparent;
+border:2px solid #00D5FF;
+border-radius: 5px;
+padding: 13px;
+margin-bottom: 15px;
+width:100%;
+box-sizing: border-box;
+outline:0;
+}
+
+.info-input:focus{border:2px solid #FAFAFF;
+}
+
+[type="submit"] {width: 100%;
+background:#EC008C;
+border-radius:5px;
+border:0;
+cursor:pointer;
+color:#242424;
+font-size:24px;
+padding-top:10px;
+padding-bottom:10px;
+margin-top:-4px;
+font-weight:700;
+}
+[type="submit"]:hover { background:#c70077; }
+
+
+/* flex                   */
+
+.parent{display: flex;
+flex-direction: row;
+}
+
+.child1{width: 50%;
+height: 15rem;
+text-align: center;
+}
+
+.child2 {width: 50%;
+height: 15rem;
+text-align: center;
+}
+
+
+/* footer                                  */
+.footer{background-color: #242424;
+color: #FAFAFF;
+}
+
+.footer__copy{padding-top: 1rem;
+text-align: center;
+font-size: 16px;
+}
+
+
+/* media                                 */
+
+/* 768px screen                         */
+
+ @media screen and (min-width: 768px) {
+  body {margin: 0;
+  font-size: 16px;
+  }
+
+  h1 {font-size: 36px;
+  }
+
+  h2 {font-size: 24px;
+  }
+
+  .nav {height: 64px;
+  justify-content: initial;
+  }
+
+  .nav__menu {margin-left: auto;
+  }
+
+  .nav__list {display: flex;
+  }
+
+  .nav__item {margin-left: 32px;
+  margin-bottom: 0;
+  }
+
+  .nav__toggle {display: none;
+  }
+
+  .home__title {font-size: 96px;
+  line-height: .8;
+  letter-spacing: 24px;
+  }
+
+  .home__container {height: 100vh;
+  }
+
+  .home__data {padding: 0;
+  height: max-content;
+  align-self: center;
+  }
+
+  .section-all {margin-bottom: 32px;
+  }
+
+  .section-all, .footer__copy {font-size: 13px;
+  }
+
+  .footer {padding: 32px 0;
+  }
+ }
+
+
+ @media screen and (max-width: 768px) {
+  .nav__menu {position: fixed;
+  top: 48px;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  padding: 32px;
+  background-color: #242424;
+  }
+
+  .nav__item {margin-bottom: 32px;
+  }
+
+  .nav__link {color: #FAFAFF;
+  font-weight: 500;
+  }
+
+  .nav__link:hover {color: #EC008C;
+  }
+
+  .nav__toggle {font-size: 24px;
+  cursor: pointer;
+  }
+}
+
+
+/* 1024 px                          */
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {margin-left: auto;
+  margin-right: auto;
+  }
+
+  .home__data{
+  padding-left: 7rem;
+  }
+}
+
+
+  

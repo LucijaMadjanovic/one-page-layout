@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Tehnologijada, fakultetsko natjecanje, studentsko natjecanje, natjecanje, sport, znanost, Grafički fakultet">
+        <meta name="author" content="Lucija Madjanović">
+        
+        <title>Tehnologijada</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/mainscript.js"></script>
+
+
+        <!---------------------------- Burger ikona ---------------------------->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+
+    </head>
+    
+    <body>
+        <!---------------------------- HEADER ---------------------------->
+        <header class="header">
+            <nav class="nav bd-grid">
+
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img src="logo.png" class="logo" alt="logo Tehnologijade">
+                    </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">O Tehnologijadi</a></li>
+                        <li class="nav__item"><a href="#timer" class="nav__link">Koliko do Tehnologijade?</a></li>
+                        <li class="nav__item"><a href="#prijava" class="nav__link">Prijavi se</a></li>
+                        <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!---------------------------- HOME ---------------------------->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__data">
+                        <!--  ovdje je kako stavit slideshow, ima i automatski slide https://www.w3schools.com/howto/howto_js_slideshow.asp  -->
+
+                        <!--NASLOV maybe-->
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!---------------------------- O TEHNOLOGIJADI ---------------------------->
+            <section class="about section" id="about">
+                <h2 class="section-title">O TEHNOLOGIJADI</h2>
+                    <div class="section-all"><p>Ovaj tekst je spremljen pod "section-all", ima ga i u CSS-u.</p>
+                    </div>
+            </section>
+
+
+            <!---------------------------- TIMER ---------------------------->
+            <section class="timer section" id="timer">
+                <div class="timer__bg">
+                    <div class="timer__data">
+                        <h2 class="timer__title">KOLIKO DO TEHNOLOGIJADE?</h2>
+                        <p id="timer-js" class="timer_odbrojavanje"></p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!---------------------------- PRIJAVA ---------------------------->
+            <section class="featured section" id="prijava">
+                <h2 class="section-title">PRIJAVA</h2>
+                <div>
+                    <form>      
+                        <input name="name" type="text" class="info-input" placeholder="Ime" required/>   
+                        <input name="lastname" type="text" class="info-input" placeholder="Prezime" required/>
+                        <input name="email" type="text" class="info-input" placeholder="Email" required/>
+                        <input name="phone" type="text" class="info-input" placeholder="Broj mobitela" required/>
+                        <input name="email" type="text" class="info-input" placeholder="Fakultet"/>
+                        <select name="kategorije" class="info-input">
+                            <option value="odabir" disabled>Odaberi kategoriju</option>
+                            <option value="znanost">Znanost</option>
+                            <option value="sport">Sport</option>
+                            <option value="oboje">Znanost i sport</option>
+                        </select>
+                        <input type="submit" value="SUBMIT"/>
+                      </form>
+                </div>
+            </section>
+
+
+            <!---------------------------- KONTAKT I DRUŠTVENE ---------------------------->
+
+            <section id="kontakt">
+                <div>
+                    <div class="parent">
+                        <div class="child1">
+                            <h3>Kontakt informacije</h3>
+                            <ul>
+                                <li><a href="https://goo.gl/maps/w6YMvT3i3X2G2ho99" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i>Getaldićeva 2, 10000 Zagreb</a></li>
+                                <li><a href="tel:+385-1-2371080"><i class="fa fa-phone-square" aria-hidden="true"></i>01 23 71 080</a></li>
+                                <li><a href="mailto:info@grf.hr?subject=Tehnologijada"><i class="fa fa-envelope" aria-hidden="true"></i>info@grf.hr</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="child2">
+                            <h3>Društvene mreže</h3>
+                            <ul>
+                                <a href="#" class="footer__social"><i class='bx bxl-facebook-square'></i></a>
+                                <a href="#" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!---------------------------- FOOTER ---------------------------->
+
+        <footer class="footer section">
+            <p class="footer__copy">Završni rad - Grafički fakultet, Sveučilište u Zagrebu &copy; 2022</p>
+        </footer>
+
+    </body>
+</html>
